@@ -1,6 +1,7 @@
 * {
     font-family: Roboto, sans-serif;
     color: #37352F;
+    font-size: 18px;
 }
 
 body {
@@ -16,4 +17,32 @@ header {
     text-decoration: none;
     font-size: 28px;
     font-weight: bold;
+}
+
+.hero {
+    background-color: #f8edeb;
+    padding: 70px 150px;
+    display: flex;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0px;
+}
+
+.hero p {
+    margin-bottom: 40px;
+}
+
+.github {
+    text-decoration: none;
+    color: #f8edeb;
+    background-color: #37352F;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.heroimg {
+    width: 700px;
+    height: auto;
 }
