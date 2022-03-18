@@ -8,6 +8,8 @@ body {
     margin: 0px;
 }
 
+/* HEADER */
+
 header {
     background-color: #f8edeb;
     padding: 10px 150px;
@@ -19,10 +21,13 @@ header {
     font-weight: bold;
 }
 
+/* HERO */
+
 .hero {
     background-color: #f8edeb;
-    padding: 70px 150px;
+    padding: 100px 150px;
     display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -45,4 +50,14 @@ h1 {
 .heroimg {
     width: 700px;
     height: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f8edeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
