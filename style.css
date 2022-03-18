@@ -1,0 +1,19 @@
+* {
+    font-family: Roboto, sans-serif;
+    color: #37352F;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #f8edeb;
+    padding: 10px 150px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
