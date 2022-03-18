@@ -52,6 +52,70 @@ h1 {
     height: auto;
 }
 
+/* INFO DIV */
+
+.update,
+.learning {
+    margin: 50px 150px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.update {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.updatetext div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learning {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 70px;
+}
+
+.learning h2 {
+    text-align: right;
+}
+
+.learningtext div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 250px;
+    height: auto;
+}
+
+.learning .icon {
+    width: 300px;
+    height: auto;
+}
+
+.info a {
+    text-decoration: none;
+    color: #f8edeb;
+    background-color: #37352F;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 0px 20px;
+}
+
+svg {
+    display: block;
+}
+
 /* FOOTER */
 
 footer {
