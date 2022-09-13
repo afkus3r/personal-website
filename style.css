@@ -34,6 +34,14 @@ nav {
     border-right: 1px solid #EBEBEC;
 }
 
+input {
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    display: inline-flex;
+    font-family: "Times New Roman", serif;
+}
+
 .tabBar {
     border-bottom: 1px solid #EBEBEC;
     display: flex;
@@ -49,7 +57,7 @@ button {
     background-color: white;
 }
 
-.info {
+.content {
     padding: 24px;
 
 }
@@ -59,9 +67,10 @@ a {
     color: #3366CC;
 }
 
-.info>p {
+.content>p {
     margin-top: 16px;
     margin-right: 30%;
     font-family: 'Roboto Mono', monospace;
     line-height: 150%;
+    text-align: justify;
 }
