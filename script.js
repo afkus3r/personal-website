@@ -3,11 +3,11 @@ const navLinks = document.querySelectorAll("input");
 
 navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-        createTab(link.value);
+        openTab(link.value);
     })
 })
 
-function createTab (tabName) {
+function openTab (tabName) {
     const tab = document.createElement("p");
     tab.classList.add("tab");
     tab.innerHTML = tabName;
@@ -17,6 +17,7 @@ function createTab (tabName) {
     button.innerHTML = "x";
     tab.appendChild(button);
 
+    // Close tab
     button.addEventListener("click", () => {
         tab.remove();
     })
