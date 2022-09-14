@@ -1,4 +1,4 @@
-const tabBar = document.querySelector(".tabBar");
+const tabBar = document.querySelector(".tabBarNoStyle");
 const navLinks = document.querySelectorAll("input");
 
 navLinks.forEach((link) => {
@@ -8,6 +8,8 @@ navLinks.forEach((link) => {
 })
 
 function openTab (tabName) {
+    tabBar.classList.add("tabBar");
+
     const tab = createElement("p", tabName);
     tab.classList.add("tab");
     tabBar.appendChild(tab);
