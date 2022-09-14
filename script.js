@@ -8,17 +8,22 @@ navLinks.forEach((link) => {
 })
 
 function openTab (tabName) {
-    const tab = document.createElement("p");
+    const tab = createElement("p", tabName);
     tab.classList.add("tab");
-    tab.innerHTML = tabName;
     tabBar.appendChild(tab);
 
-    const button = document.createElement("button");
-    button.innerHTML = "x";
+    const button = createElement("button", "x");
     tab.appendChild(button);
 
     // Close tab
     button.addEventListener("click", () => {
         tab.remove();
     })
+}
+
+function createElement (type, content) {
+    const element = document.createElement(type);
+    const node = document.createTextNode(content);
+    element.appendChild(node);
+    return element;
 }
