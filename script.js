@@ -1,13 +1,15 @@
 const tabBar = document.querySelector(".tabBarNoStyle");
 const navLinks = document.querySelectorAll("input");
+const content = document.querySelector(".content");
 
 navLinks.forEach((link) => {
     link.addEventListener("click", () => {
         openTab(link.value);
+        openContent(link.value);
     })
 })
 
-function openTab (tabName) {
+function openTab(tabName) {
     tabBar.classList.add("tabBar");
 
     const tab = createElement("p", tabName);
@@ -23,7 +25,15 @@ function openTab (tabName) {
     })
 }
 
-function createElement (type, content) {
+function openContent(contentName) {
+    const templateClass = "." + contentName;
+    const template = document.querySelector(templateClass);
+    const clone = template.content.cloneNode(true);
+
+    content.appendChild(clone);
+}
+
+function createElement(type, content) {
     const element = document.createElement(type);
     const node = document.createTextNode(content);
     element.appendChild(node);
