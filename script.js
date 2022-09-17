@@ -4,6 +4,7 @@ const content = document.querySelector(".content");
 
 navLinks.forEach((link) => {
     link.addEventListener("click", () => {
+        hideContent();
         openTab(link.value);
         openContent(link.value);
     })
@@ -22,7 +23,14 @@ function openTab(tabName) {
     // Close tab
     button.addEventListener("click", () => {
         tab.remove();
+        hideContent();
     })
+}
+
+function hideContent () {
+    while (content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
 }
 
 function openContent(contentName) {
